@@ -1,0 +1,14 @@
+* {
+	color: rgb(2, 36, 81); /*a comment */
+	margin: 10px;
+	font: 14px Tahoma;
+    background-color:antiquewhite;
+}
+
+p {
+    color: black;
+}
+
+button.subpage {
+    color: black;
+}
