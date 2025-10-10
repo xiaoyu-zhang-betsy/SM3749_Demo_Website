@@ -1,8 +1,84 @@
+html {
+    background-color: white;
+}
 * {
 	color: rgb(2, 36, 81); /*a comment */
-	margin: 10px;
+	margin: 20px;
 	font: 14px Tahoma;
-    background-color:antiquewhite;
+    /* background-color:antiquewhite; */
+    /* border-radius: 1em; */
+}
+
+h1, h2, h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header, section {
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: antiquewhite;
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+
+nav {
+    margin: 1em auto 1em auto;
+    width: min(1000px, 100%);
+    font-size: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav p:first-child{
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+.intro_button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: lightsalmon;
+    padding: .75em 1em;
+    margin-top: 0em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.text-container {
+    flex: 0 1 40em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+section#my-work {
+    background-color: whitesmoke;
 }
 
 p {
@@ -11,6 +87,9 @@ p {
 
 button.subpage {
     color: black;
+    background-color: antiquewhite;
+    border-radius: .3em;
+    font-size: 1.2em;
 }
 
 .box {
@@ -23,10 +102,27 @@ button.subpage {
 }
 
 .grid-container {
+    margin: 3em 0em;
     display: grid;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 100px 100px 100px;
-    grid-gap: 1px;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5";
+    gap: 1em;
+}
+
+.grid-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
+    margin: 0;
+    transition: 100ms ease;
+}
+
+.grid-container img:hover{
+    scale: 1.05;
 }
 
 .grid-item1 {
@@ -53,4 +149,8 @@ button.subpage {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+}
+
+#vis-scatterplot {
+    background-color: whitesmoke;
 }

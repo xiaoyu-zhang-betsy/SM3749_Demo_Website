@@ -16,9 +16,9 @@ mynode.innerHTML = "The work is an exhibition";
 mynode.style.color = "blue";
 
 // add event listener
-mynode.addEventListener("click", welcomeToWork1);
-document.querySelector("#my_work1").appendChild(mynode);
+// mynode.addEventListener("click", welcomeToWork1);
+// document.querySelector("#my_work1").appendChild(mynode);
 
-function welcomeToWork1() {
-    mynode.innerHTML = "Thank you for your interest in my work!"
-} 
+// function welcomeToWork1() {
+//     mynode.innerHTML = "Thank you for your interest in my work!"
+// } 
